@@ -23,7 +23,7 @@ class SimpleListModel extends Model {
   def remove {
     val obj = new Integer(choose(0, N))
     val res = collection.remove(obj)
-    n = n - 1
+    if (res) n = n - 1
   }
 
   def size {

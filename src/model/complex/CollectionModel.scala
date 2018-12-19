@@ -33,6 +33,7 @@ abstract class CollectionModel extends Model {
     val res = collection.remove(obj)
     if (res) {
       n = n - 1
+      invalidateIt
     }
   }
 
